@@ -1,22 +1,27 @@
 
 ---
 
-## ⚠️ CRITICAL WARNING
+<div style="background-color: #fffbe6; border-left: 6px solid #f1c40f; padding: 15px; margin: 20px 0; border-radius: 5px;">
+  <strong>⚠️ IMPORTANT NOTICE: FOR RESEARCH & PERSONAL USE ONLY</strong>
+  <p>This blocklist is a highly curated aggregation of threats intended for <strong>cybersecurity professionals, researchers, and advanced users</strong> in a controlled environment (e.g., a home lab). It is not designed for general consumer or commercial use.</p>
+  <p>Due to its comprehensive nature, it will likely disrupt services and break website functionality. Implementation requires expert knowledge to manage and troubleshoot.</p>
+  <p>This project is provided <strong>"AS IS," WITHOUT WARRANTY OF ANY KIND</strong>. The authors assume no liability for data loss, service interruption, or any other damages resulting from its use.</p>
+</div>
 
-> 🚨 **This list is EXTREMELY AGGRESSIVE and will break websites.** Use only if you are an advanced user comfortable with manual troubleshooting. **No responsibility is taken for any damage or inconvenience.**
+---
 
-<details>
-<summary><strong>📖 Click to read the full disclaimer</strong></summary>
+## 📜 Usage Terms
 
-By using this list, you acknowledge and agree that:
-*   **High Resource Usage:** This is a large file (~94MB) and will significantly increase RAM and CPU usage on routers, DNS servers, and low-power devices.
-*   **Widespread Website Breakage:** Many websites will break, lose functionality, or look broken. You **will** need to manually whitelist domains to restore access.
-*   **False Positives:** Legitimate services and trackers may be blocked. This list prioritizes privacy over convenience.
-*   **Performance Impact:** Page load times may be slightly slower due to the sheer number of blocked elements.
-*   **No Responsibility:** The author provides this list "as-is" and is **not responsible** for any damage, data loss, or inconvenience caused.
+This blocklist is open-source under the MIT License, but its content is intended strictly for:
 
-**This is NOT a "set and forget" solution. If you are not comfortable troubleshooting network issues, DO NOT USE THIS LIST.**
-</details>
+-   ✅ **Personal Use:** On your personal, private devices.
+-   ✅ **Educational Use:** For learning about DNS filtering and network threats.
+-   ✅ **Security Research:** In a lab environment for analysis and testing.
+
+### ❌ Prohibited Use:
+
+-   **Commercial Use:** Do not deploy this list on company hardware, corporate networks, or as part of a commercial product or service.
+-   **Redistribution:** Do not re-host or sell this list or access to it.
 
 ---
 
@@ -25,21 +30,21 @@ By using this list, you acknowledge and agree that:
 <details>
 <summary><strong>📋 Click to expand</strong></summary>
 
-- [🔥 Known Issues & Functionality Breakage](#-known-issues--functionality-breakage)
+- [🔥 Known Functionality Impact](#-known-functionality-impact)
 - [📊 Technical Specifications](#-technical-specifications)
 - [📥 How to Use](#-how-to-use)
 - [❓ FAQ](️-faq)
 - [📜 Sources](️-sources)
-- [📄 Disclaimer & License](️-disclaimer--license)
+- [📄 Full License](️-full-license)
 </details>
 
 ---
 
-## 🔥 Known Issues & Functionality Breakage
+## 🔥 Known Functionality Impact
 
 This list blocks domains that are essential for certain features of popular applications. You may need to whitelist domains to restore functionality.
 
-| Service / Platform | Known Issues | Potential Solution |
+| Service / Platform | Known Impact | Potential Solution |
 | :--- | :--- | :--- |
 | **📘 META** (Facebook, Messenger, WhatsApp) | Broken avatars, help center, and video effects in WhatsApp. Restricted use of Facebook/Messenger apps. | Unblock specific META tracker domains if needed. |
 | **🪟 Microsoft** (Windows, Xbox) | Windows Spotlight, Xbox Live Achievements Activity History may not work. | Unblock specific Microsoft telemetry domains if needed. |
@@ -52,9 +57,9 @@ This list blocks domains that are essential for certain features of popular appl
 
 | Specification | Detail |
 | :--- | :--- |
-| **🎯 Purpose** | Strictly cleans the Internet and protects your privacy. |
-| **⚡ Blocking Type** | **Aggressive** |
-| **🧑‍💻 Target User** | Experienced users, privacy enthusiasts, researchers. |
+| **🎯 Purpose** | Threat intelligence and privacy research. |
+| **⚡ Filtering Level** | **Comprehensive** |
+| **🧑‍💻 Target User** | Cybersecurity professionals, researchers, advanced home-lab users. |
 | **📦 Total Unique Domains** | ~2,505,000 |
 | **💾 File Size** | ~94 MB (Uncompressed) |
 | **📜 Format** | AdGuard DNS Filter (`||domain.com^`) |
@@ -81,13 +86,13 @@ This list blocks domains that are essential for certain features of popular appl
 ## ❓ FAQ
 
 **Q: A website I use is broken. What do I do?**
-A: This is expected. Use AdGuard's blocking log to identify the blocked domain and add it to your "allowlist".
+A: This is an expected outcome of a research-grade list. Use your client's blocking log to identify the blocked domain and add it to your "allowlist".
 
 **Q: How often is this list updated?**
-A: Manually, on an irregular basis.
+A: Manually, on an irregular basis as new threats are identified.
 
 **Q: Can I request a domain to be added or removed?**
-A: No. This is a personal project.
+A: No. This is a personal research project.
 
 ---
 
@@ -102,8 +107,6 @@ This list is a curated, deduplicated, and extended fusion of dozens of public so
 
 ---
 
-## 📄 Disclaimer & License
+## 📄 Full License
 
-**Disclaimer:** This project is provided for educational and personal use only. Use at your own risk.
-
-**License:** This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for full details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
